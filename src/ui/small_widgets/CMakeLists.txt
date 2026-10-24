@@ -3,6 +3,7 @@ add_library(
   ActorsWidget.cpp
   AlphabeticalList.cpp
   Badge.cpp
+  CheckboxDelegate.cpp
   ClosableImage.cpp
   ComboDelegate.cpp
   FilterWidget.cpp

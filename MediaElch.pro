@@ -489,6 +489,7 @@ SOURCES += \
     src/ui/small_widgets/ActorsWidget.cpp \
     src/ui/small_widgets/AlphabeticalList.cpp \
     src/ui/small_widgets/Badge.cpp \
+    src/ui/small_widgets/CheckboxDelegate.cpp \
     src/ui/small_widgets/ClosableImage.cpp \
     src/ui/small_widgets/ComboDelegate.cpp \
     src/ui/small_widgets/FilterWidget.cpp \
@@ -911,6 +912,7 @@ HEADERS += Version.h \
     src/ui/small_widgets/ActorsWidget.h \
     src/ui/small_widgets/AlphabeticalList.h \
     src/ui/small_widgets/Badge.h \
+    src/ui/small_widgets/CheckboxDelegate.h \
     src/ui/small_widgets/ClosableImage.h \
     src/ui/small_widgets/ComboDelegate.h \
     src/ui/small_widgets/FilterWidget.h \

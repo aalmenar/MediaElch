@@ -21,6 +21,8 @@
     You had to select another episode again (#1896)
   - TV shows are sorted according to their sort-title (#1927)
   - Custom movie scraper can now skip scrapers without any result (#1979)
+  - Check boxes of the "Directories" table in the global settings were not
+    drawn on macOS.  They are now drawn by MediaElch itself.
 - HotMovies/AdultDvdEmpire: Search works again (#1811)
 - IMDb:
   - Scraping of was completely broken; it is fixed again (#1889)

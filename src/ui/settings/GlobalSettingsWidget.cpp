@@ -3,6 +3,7 @@
 
 #include "file_search/MovieFilesOrganizer.h"
 #include "settings/Settings.h"
+#include "ui/small_widgets/CheckboxDelegate.h"
 
 #include <QFileDialog>
 #include <QMessageBox>
@@ -30,6 +31,9 @@ GlobalSettingsWidget::GlobalSettingsWidget(QWidget* parent) : QWidget(parent), u
     ui->dirs->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     ui->dirs->horizontalHeader()->setSectionResizeMode(1, QHeaderView::Stretch);
     ui->dirs->setSelectionBehavior(QAbstractItemView::SelectRows);
+    // The table's check boxes are in columns 2 to 4.  Some platform styles only
+    // draw the first check indicator of a table, so let a delegate draw them.
+    ui->dirs->setItemDelegate(new CheckboxDelegate(ui->dirs));
 
     // clang-format off
     connect(ui->buttonAddDir,           &QAbstractButton::clicked,         this, &GlobalSettingsWidget::chooseDirToAdd);
